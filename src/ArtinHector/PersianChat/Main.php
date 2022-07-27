@@ -11,7 +11,6 @@ use pocketmine\event\Listener;
 class Main extends PluginBase implements Listener{
 
     public function onEnable() : void{
-		$this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->getServer()->getLogger()->info("[PersianChat] : Enable");
     }
 
@@ -111,7 +110,6 @@ class Main extends PluginBase implements Listener{
     }
     
     public function onDisable() : void {
-      $this->getServer()->getPluginManager()->registerEvents($this, $this);
       $this->getServer()->getLogger()->info("[PersianChat] : Disable");
     }
 }
